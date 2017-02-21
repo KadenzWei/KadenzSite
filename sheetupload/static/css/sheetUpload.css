@@ -1,0 +1,25 @@
+.form-horizontal div{
+    /*margin-top: 30px;*/
+}
+.form-horizontal label{
+    /*margin-top: 30px;*/
+}
+
+button{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submite{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.ui>.fields>.field>label{
+	color:red;
+}*/
+
+/*.ui>.fields>.field>input,.ui>.fields>.field>select{
+	width: 70%;
+}*/

@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{webTitle}}</title>
+        {% block head %}{% endblock %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="{% static 'script/sidebar.js' %}"></script>
+		<link rel="stylesheet" href="{% static 'css/base.css' %}">
+    </head>
+    <body>
+        <div id="sidebar">{% include "travel/sidebar.html" %}</div>
+        <div id="content">{% block content %}{% endblock %}</div>
+    </body>
+</html>

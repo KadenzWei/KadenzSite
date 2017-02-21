@@ -1,0 +1,135 @@
+{% extends 'sheetUpload/base.html' %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'css/sheetUpload.css' %}"> {% endblock %} {% block content %}
+<script type="text/javascript">
+$(function() {
+    $('.ui.dropdown').dropdown();
+});
+</script>
+<div class="title">
+    Sheet Upload
+</div>
+<div class="ui grid form inverted">
+    <div class="five wide column">
+        <label class="text" for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter the song name">
+    </div>
+    <div class="two wide column"></div>
+    <div class="five wide column border">
+        <label for="difficulty">Difficulty:</label>
+        <select class="ui search dropdown" id="difficulty">
+            <option value="0">difficulty</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </div>
+    <!-- <div class="two fields">
+        <div class="field">
+            <label for="category">Category:</label>
+            <select id="category" class="ui search dropdown">
+                <option value="0">category</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <div class="ui fluid multiple search selection dropdown">
+                <input type="hidden" name="country" value="kp">
+                <i class="dropdown icon"></i>
+                <input class="search">
+                <div class="default text">Search...</div>
+                <div class="menu">
+                    <div class="item">Choice 1</div>
+                    <div class="item">Choice 2</div>
+                    <div class="item">Choice 3</div>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+        </div>
+    </div>
+    <div class="two fields">
+        <div class="field">
+        </div>
+        <div class="field">
+        </div>
+    </div>
+    <div class="two fields">
+        <div class="field">
+        </div>
+        <div class="field">
+        </div>
+    </div>
+    <div class="two fields">
+        <div class="field">
+        </div>
+        <div class="field">
+        </div>
+    </div>
+    <div class="two fields">
+        <div class="field">
+        </div>
+        <div class="field">
+        </div>
+    </div>
+    <div class="two fields">
+        <div class="field">
+        </div>
+        <div class="field">
+        </div> -->
+    </div>
+</div>
+<div class="row">
+    <form class="form-horizontal">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <label class="control-label col-sm-2" for="name">Name:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="Enter name">
+            </div>
+            <label class="control-label col-sm-2" for="category">Category:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="category" placeholder="Enter category">
+            </div>
+            <label class="control-label col-sm-2" for="source">From:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="source" placeholder="Enter where the song come from">
+            </div>
+            <label class="control-label col-sm-2" for="link">Video:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="link" placeholder="Enter the video's link">
+            </div>
+            <label class="control-label col-sm-2" for="picture">Picture:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="picture" placeholder="Enter the picture's link">
+            </div>
+            <label class="control-label col-sm-2" for="tag">Tag:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="tag" placeholder="Enter tags">
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <label class="control-label col-sm-2" for="difficulty">Difficulty:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="difficulty" placeholder="Enter difficulty">
+            </div>
+            <label class="control-label col-sm-2" for="category">Page:</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="page" placeholder="Enter page">
+            </div>
+            <label class="control-label col-sm-2" for="describe">Describe:</label>
+            <div class="col-sm-10">
+                <input type="hidden" class="form-control" id="describe" placeholder="Enter the describe">
+                <textarea name="textarea" style="height: 200px" class="form-control"></textarea>
+            </div>
+            <div class="submit">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
